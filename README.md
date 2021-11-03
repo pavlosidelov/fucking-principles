@@ -1,6 +1,4 @@
-# Welcome to Streamlit!
+# Fucking Principles!
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
+Set as your stat page and do not give a fuck...
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
