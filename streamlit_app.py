@@ -1,17 +1,10 @@
 import random as rnd
-#import icecream as ic
-#import pickledb
 import streamlit as st
-#import db_ops
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+totalfucks = open("totalfucks.txt", "r")
+current_fucks = totalfucks.readline()
+print("Current fucks = ", current_fucks)
+totalfucks.close()
 
 fp_base = ['When in doubt fucking Red Team it.',
 'Be fucking bold.',
@@ -163,5 +156,14 @@ with fq:
     fq = get_fp()
     rq = get_rule()
 
+print("count : ", type(current_fucks))
+countfucks = int(current_fucks)
+countfucks += 1
+print(countfucks)
+st.text("Total principles returned : " + str(countfucks))
+totalfucks_save = open("totalfucks.txt", "w")
+totalfucks_save.writelines(str(countfucks))
+totalfucks_save.close()
+st.text("")
 st.text("Send your fucking principles to fuck@fuckingprinciples.xyz")
 st.text("Inspired by REDTEAM.NET : https://redteams.net/rules")
